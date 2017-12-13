@@ -1,0 +1,3 @@
+This an android based chat application which uses end to end encryption.For reading the contents of the chat user has to authenticate himself/herself using Fingerprint Authentication.
+Users can set their profile picture,status.
+Whenever a new user joins the app than it will be visible to all users.
