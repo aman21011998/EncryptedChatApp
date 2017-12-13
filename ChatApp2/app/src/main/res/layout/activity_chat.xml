@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aman.chatapp.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:titleTextColor="@color/lemon"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/chattoolbar"
+        ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#ffffff"
+            app:srcCompat="@mipmap/add" />
+
+        <EditText
+            android:id="@+id/editmessage"
+            android:layout_width="240dp"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:background="#ffffff"
+            android:inputType="textPersonName"
+           android:hint="Enter text here........." />
+
+        <ImageButton
+            android:id="@+id/send"
+            android:background="#ffffff"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            app:srcCompat="@drawable/send" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/message_list"
+        android:layout_marginTop="70sp"
+        android:layout_above="@+id/linearLayout"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

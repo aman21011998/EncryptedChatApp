@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+
+    android:id="@+id/logout"
+    android:title="Logout"
+    android:icon="@drawable/logout"
+    android:orderInCategory="103"
+    ></item>
+<item
+    android:id="@+id/accounts"
+    android:orderInCategory="101"
+    android:title="Account Settings"
+    ></item>
+    <item
+        android:id="@+id/deactivate"
+        android:orderInCategory="102"
+        android:title="Deactivate Account"
+        ></item>
+</menu>
